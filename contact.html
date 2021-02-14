@@ -7,6 +7,8 @@
     <title>Contact us</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/script.js"></script>
+
 </head>
 <body id="contact-page">
     
@@ -35,25 +37,25 @@
 
             <div id="form">
 
-                <form action="">
+                <form action="" name="contact-form" method="post" onsubmit="return validateForm()">
 
                     <p>
                     <label for="">Name</label>
-                    <input type="text" placeholder="Enter name">
+                    <input type="text" placeholder="Enter name" name="name">
                     </p>
 
                     <p>
                     <label for="">Email</label>
-                    <input type="email" placeholder="Enter email">
+                    <input type="email" placeholder="Enter email" name="email">
                     </p>
 
                     <p>
                     <label for="">Subject</label>
-                    <input type="Subject" placeholder="Subject">
+                    <input type="Subject" placeholder="Subject" name="subject">
                     </p>
 
                     <p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
                     </p>
 
                     <input type="submit">
